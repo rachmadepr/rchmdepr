@@ -4,12 +4,12 @@ interface Award {
 }
 
 const awards: Award[] = [
-  { title: "Best Web Design of the Year", year: "2024" },
-  { title: "Excellence in UX/UI Design", year: "2024" },
-  { title: "Innovation in Digital Experiences", year: "2023" },
-  { title: "Top Framer Website Design", year: "2023" },
-  { title: "Outstanding Webflow Project Award", year: "2022" },
-  { title: "Creative Excellence in Web Design", year: "2022" },
+  { title: "Work Experience : Magang (Staff) Data Entry", year: "2023" },
+  { title: "Freelancer : Excellence in UX/UI Design", year: "2023-Now" },
+  { title: "Organization : Leader Coppala", year: "2021-2022" },
+  { title: "Atlet : FAJI ( Federasi Arung Jeram Indonesia )" , year: "2021" },
+  { title: "Organization : KPUM F ( Hukum )", year: "2024" },
+  { title: "Organizatiin : BEM Faculty ( Kajian Strategis )", year: "2025" },
 ]
 
 export const AwardsSection = () => {
@@ -18,14 +18,13 @@ export const AwardsSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Awards
+            Life long experiences ranging from work experience, 
+            organizational experience, and award experience
           </h2>
-          <h3 className="text-2xl md:text-3xl font-light text-muted-foreground">
-            & Recognitions
-          </h3>
           <p className="text-muted-foreground max-w-2xl">
-            I'm honored to have my work recognized by industry experts, celebrating creativity, innovation, and 
-            excellence in web design.
+            Keberhasilan adalah hasil dari kerja keras dan dukungan orang-orang di sekitar kita jadi 
+            bersyukurlah bukan hanya pada hasil, tapi juga pada proses dan orang-orang yang menemani perjalananmu
+            dan tidak ada perjalanan yang benar-benar sendiri, selalu ada tangan-tangan yang membantu di sepanjang jalan.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ const socialLinks: SocialLink[] = [
   {
     platform: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/rchmdepr_?igsh=aXllNHF1dTF1N3Bj",
     handle: "@"
   },
   {
@@ -63,7 +63,7 @@ export const SocialSection = () => {
             className="w-full group"
           >
             <Phone className="w-5 h-5 mr-3 group-hover:animate-pulse" />
-            Book a Call
+            Contact Me 
           </Button>
 
           <div className="flex items-center space-x-4 p-6 bg-card/30 rounded-xl border border-border/20">
@@ -71,8 +71,8 @@ export const SocialSection = () => {
               <span className="text-primary-foreground font-bold text-lg">EN</span>
             </div>
             <div>
-              <h4 className="text-foreground font-medium">Elias Norden</h4>
-              <p className="text-muted-foreground text-sm">Digital Designer</p>
+              <h4 className="text-foreground font-medium">Rachmad</h4>
+              <p className="text-muted-foreground text-sm">Freelancer</p>
             </div>
           </div>
 
