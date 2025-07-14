@@ -1,59 +1,66 @@
 import { Badge } from "@/components/ui/badge"
 import profilePhoto from "@/assets/profile-photo.jpg"
+import { Code } from "lucide-react"
 
 export const PortfolioHero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-primary flex items-center justify-center px-6">
-      <div className="max-w-4xl mx-auto text-center space-y-8">
+    <section
+      className="relative min-h-screen flex items-center justify-center p-4 md:p-8 bg-stone-200 dark:bg-stone-900 overflow-hidden"
+      style={{
+        backgroundImage:
+          "radial-gradient(hsla(0,0%,60%,.3) 1px, transparent 1px)",
+        backgroundSize: "16px 16px",
+      }}
+    >
+      {/* Decorative Lego-like blocks */}
+      <div className="absolute top-10 left-10 w-12 h-12 bg-red-500 rounded-md shadow-lg rotate-12 transition-transform hover:scale-110 hover:rotate-6"></div>
+      <div className="absolute bottom-16 right-12 w-16 h-16 bg-blue-500 rounded-md shadow-lg -rotate-6 transition-transform hover:scale-110 hover:rotate-0"></div>
+      <div className="absolute top-24 right-20 w-8 h-8 bg-yellow-400 rounded-md shadow-lg rotate-45 transition-transform hover:scale-110 hover:rotate-30"></div>
+
+      {/* Main Lego brick container */}
+      <div className="relative bg-card p-6 sm:p-8 rounded-2xl shadow-2xl max-w-xl w-full text-center border-4 border-border/20">
+        {/* Lego studs on top */}
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-3">
+          <div className="w-6 h-6 rounded-full bg-background border-2 border-border/20"></div>
+          <div className="w-6 h-6 rounded-full bg-background border-2 border-border/20"></div>
+          <div className="w-6 h-6 rounded-full bg-background border-2 border-border/20"></div>
+          <div className="w-6 h-6 rounded-full bg-background border-2 border-border/20"></div>
+        </div>
+
         {/* Status Badge */}
         <div className="flex justify-center">
-          <Badge variant="outline" className="border-primary/30 text-primary bg-primary/10 px-4 py-2">
-            <div className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></div>
+          <Badge variant="secondary" className="px-4 py-2 text-sm">
+            <Code className="w-4 h-4 mr-2" />
             Ready to accept any project except draining the sea. 
           </Badge>
         </div>
 
         {/* Profile Image */}
-        <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40">
-          <div className="absolute inset-0 bg-gradient-accent rounded-full blur-xl opacity-30 animate-glow"></div>
+        <div className="relative mx-auto w-32 h-32 md:w-36 md:h-36 mt-6 group">
+          <div className="absolute -inset-1.5 bg-gradient-to-br from-red-500 to-red-400 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-500 animate-tilt"></div>
           <img
             src={profilePhoto}
             alt="Rachmad. - Freelancer"
-            className="relative w-full h-full object-cover rounded-full border-4 border-primary/20 shadow-soft"
+            className="relative w-full h-full object-cover rounded-xl border-4 border-card shadow-lg"
           />
         </div>
 
         {/* Name and Title */}
-        <div className="space-y-2">
-          <h1 className="text-2xl md:text-3xl font-light text-muted-foreground">
-            Hi, I'm Rachmad 
+        <div className="mt-4">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-foreground tracking-tight">
+            Rachmad E.P.
           </h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-            Freelancer 
-          </h2>
+          <h2 className="text-primary font-semibold text-lg">Freelancer & UI/UX Designer</h2>
         </div>
 
         {/* Description */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p className="text-md text-muted-foreground max-w-md mx-auto mt-4">
           A freelancer from the Information Systems study program is a professional who works 
           independently without being tied to one company, with an educational background in the field of
           Information Systems.
         </p>
-
-        {/* Large Profile Image */}
-        <div className="relative mt-12">
-          <div className="mx-auto w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[400px] rounded-2xl overflow-hidden bg-gradient-card border border-border/20 shadow-soft">
-            <img
-              src={profilePhoto}
-              alt="Rachmad. - Freelancer"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent p-6">
-              <p className="text-foreground font-medium text-lg">Rachmad</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
 }
+
